@@ -30,7 +30,7 @@ header .logo-text {
 }
 
 header .logo-text span {
-    color:#002655
+    color: #002655
 }
 
 header ul{
@@ -90,4 +90,56 @@ header ul li a:hover {
 
 header .menu-toggle {
     display: none;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 850px){
+    header {
+        position: relative;
+    }
+    header ul {
+        width: 100%;
+        background: #4a98f7;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .showing {
+        max-height: 100em;
+    }
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    header ul li ul li a:hover {
+        background: #2871ca;
+    }
+    header ul li ul li a{
+        padding: 10px;
+        color: white;
+        background: #4a98f7;
+        padding-left: 50px;
+    }
+    
+    header ul li ul li a.deconnexion {
+        color: red;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.5em;
+    }
+    header .logo{
+        margin-left: .8em;
+        padding-top: .6em;
+    }
+    
+    header .logo-text {
+        font-size: 1.2em;
+    }
 }
