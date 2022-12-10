@@ -1,0 +1,93 @@
+/*Fonts Google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0px;
+    margin:0px;
+    background: #f0faff;
+    font-family: 'Poppins',sans-serif;
+}
+header {
+    background: #4a98f7;
+    height: 66px;
+}
+
+header *{
+    color: white;
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 8px;
+    font-family: 'Poppins',sans-serif;
+}
+
+header .logo-text span {
+    color:#002655
+}
+
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 192px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    color: black;
+    background: white;
+}
+
+header ul li ul li a.deconnexion {
+    color: red;
+}
+
+
+header ul li ul li a:hover{
+    background: rgb(196, 208, 211);
+}
+
+header ul li a{
+display: block;
+padding: 20px;
+font-size: 1.0em;
+text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #2871ca;
+    transition: 0,5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
